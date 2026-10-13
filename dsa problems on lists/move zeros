@@ -1,0 +1,12 @@
+def move_zeros(numbers):
+    result = []
+    for n in numbers:
+        if n != 0:
+            result.append(n)
+    for n in numbers:
+        if n == 0:
+           result.append(n)
+    return result
+numbers = [0,1,0,3,0,12]
+result = move_zeros(numbers)
+print(result)
