@@ -1,0 +1,13 @@
+def  count_frequency(numbers):
+    frequency = {}
+    seen = set()
+    for n in numbers:
+        if n not in seen:
+            seen.add(n)
+            frequency[n] = 1
+        else:
+            frequency[n] = frequency[n] + 1
+    return frequency[n]
+numbers = [2,3,2,3,4,2]
+result - count_frequency(numbers)
+print(result)
