@@ -1,0 +1,15 @@
+class Person:
+    def show_name(self):
+        print("my name is venu")
+class Student(Person):
+    def study(self):
+        print("studying python")
+class Employee(Person):
+    def work(self):
+        print("working as developer")
+class Intern(Student,Employee):
+    pass
+i = Intern()
+i.show_name()
+i.study()
+i.work()
