@@ -1,0 +1,9 @@
+def largest_number(numbers):
+    largest = 0
+    for n in numbers:
+        if n > largest:
+            largest = n
+    return largest
+numbers = [12,5,28,9,17]
+result = largest_number(numbers)
+print(result)
