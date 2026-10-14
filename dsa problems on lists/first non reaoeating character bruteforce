@@ -1,0 +1,11 @@
+def first_nonreapeating(text):
+    for i in range(len(text)):
+        count = 0
+        for j in range(len(text)):
+            if text[i] == text[j]:
+                count = count + 1
+        if count == 1:
+            return text[i]
+text = "aabbcde"
+result = first_nonreapeating(text)
+print(result)
