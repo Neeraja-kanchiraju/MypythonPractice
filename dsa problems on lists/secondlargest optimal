@@ -1,0 +1,14 @@
+#optimal solution
+def second_largest(numbers):
+    largest = float('-inf')
+    secondlargest = float('-inf')
+    for n in numbers:
+        if n > largest:
+            secondlargest = largest
+            largest = n
+        elif n > secondlargest and n != largest:
+            secondlargest = n
+    return secondlargest
+numbers = [10,20,30,40,50,60]
+result = second_largest(numbers)
+print(result)
